@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>左侧导航栏</title>
+<style type="text/css">
+</style>
+<link href="teacupcss/Pagecss/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="teacupjs/Pagejs/jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson li").click(function(){
+		$(".menuson li.active").removeClass("active")
+		$(this).addClass("active");
+	});
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+		}else{
+			$(this).next('ul').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#333;">
+	<div class="lefttop"><span></span>导航栏</div>
+    
+    <dl class="leftmenu">
+        
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico01.png" /></span>员工管理
+    </div>
+    	<ul class="menuson">
+        <li><cite></cite><a href="index.html" target="rightFrame" style="color:skyblue;">首页</a><i></i></li>
+        <li><cite></cite><a href="tab.html" target="rightFrame" style="color:skyblue;">发布公告</a><i></i></li>
+        <li><cite></cite><a href="error.html" target="rightFrame" style="color:skyblue;">权限设定</a><i></i></li>
+        </ul>    
+    </dd>
+        
+    
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico02.png" /></span>部门管理
+    </div>
+    <ul class="menuson">
+         <li><cite></cite><a href="department.html" target="rightFrame" style="color:skyblue;">查看信息</a><i></i></li>
+        <li><cite></cite><a href="#" style="color:skyblue;">发布信息</a><i></i></li>
+        <li><cite></cite><a href="#" style="color:skyblue;">档案列表显示</a><i></i></li>
+        </ul>     
+    </dd> 
+    
+    
+    <dd><div class="title"><span><img src="images/leftico03.png" /></span>考勤管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="QDmain.jsp" target="rightFrame" style="color:skyblue;">每日签到</a><i></i></li>
+        <li><cite></cite><a href="QDselect.jsp" target="rightFrame" style="color:skyblue;">查看考勤</a><i></i></li>
+        <li><cite></cite><a href="QDselectmy.jsp" target="rightFrame" style="color:skyblue;">个人记录</a><i></i></li>
+        <li><cite></cite><a href="#" style="color:skyblue;">其他</a><i></i></li>
+    </ul>    
+    </dd>  
+    
+<dd><div class="title"><span><img src="images/leftico04.png" /></span>日程管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="perschedule.html" target="rightFrame"  style="color:skyblue;">个人日程</a><i></i></li>
+         <li><cite></cite><a href="deptschedule.html" target="rightFrame"  style="color:skyblue;">部门日程</a><i></i></li>
+        <li><cite></cite><a href="#" style="color:skyblue;">日程规划</a><i></i></li>
+        <li><cite></cite><a href="tableprint.html" target="rightFrame" style="color:skyblue;">打印</a><i></i></li>
+        <li><cite></cite><a href="#" style="color:skyblue;">其他</a><i></i></li>
+    </ul>
+    
+    </dd>  
+  <dd><div class="title"><span><img src="images/leftico04.png" /></span>邮箱</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="MailSendEmail.jsp" target="rightFrame"  style="color:skyblue;">发送邮件</a><i></i></li>
+         <li><cite></cite><a href="MailShouJian.jsp" target="rightFrame"  style="color:skyblue;">收件箱</a><i></i></li>
+        <li><cite></cite><a href="MailFajian.jsp" target="rightFrame"  style="color:skyblue;">发件箱</a><i></i></li>
+        <li><cite></cite><a href="MailCaogao.jsp" target="rightFrame"  style="color:skyblue;">草稿箱</a><i></i></li>
+        <li><cite></cite><a href="MailLaji.jsp" target="rightFrame"  style="color:skyblue;">垃圾箱</a><i></i></li>
+    </ul>
+    
+    </dd>   
+    </dl>
+</body>
+</html>

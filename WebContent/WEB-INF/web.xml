@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>ZPro</display-name>
+  
+	<servlet>
+		<servlet-name>scheupdate</servlet-name>
+		<servlet-class>com.tc.servlet.updateServlet</servlet-class>
+	</servlet>
+  <servlet>
+  	<servlet-name>scheselect</servlet-name>
+  	<servlet-class>com.tc.servlet.selectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>scheupdate</servlet-name>
+  	<url-pattern>/scheupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>scheselect</servlet-name>
+  	<url-pattern>/scheselect</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.tc.servlet.LoginServletSSH</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/ls/login</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>msend</servlet-name>
+  <servlet-class>com.tc.servlet.MailSendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>msend</servlet-name>
+  <url-pattern>/msend</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>mselect</servlet-name>
+  <servlet-class>com.tc.servlet.MailSelectAllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mselect</servlet-name>
+  <url-pattern>/mselect</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>mdelete</servlet-name>
+  <servlet-class>com.tc.servlet.MailDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mdelete</servlet-name>
+  <url-pattern>/mdelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>mselectFajian</servlet-name>
+  <servlet-class>com.tc.servlet.MailFajianServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mselectFajian</servlet-name>
+  <url-pattern>/mfajian</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>mselectShoujian</servlet-name>
+  <servlet-class>com.tc.servlet.MailShoujianServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mselectShoujian</servlet-name>
+  <url-pattern>/mshoujian</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  <servlet-name>mselectLaji</servlet-name>
+  <servlet-class>com.tc.servlet.MailLajiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mselectLaji</servlet-name>
+  <url-pattern>/mlaji</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+  <servlet>
+  <servlet-name>mselectCaogao</servlet-name>
+  <servlet-class>com.tc.servlet.MailCaogaoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mselectCaogao</servlet-name>
+  <url-pattern>/mcaogao</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

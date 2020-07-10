@@ -1,0 +1,64 @@
+body {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  background-color:#333;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+ /* background: #F4EF9B;
+  /* Old browsers */
+  /* FF3.6+ */
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #F4EF9B), color-stop(100%, #ECE2D8));
+  /* Chrome,Safari4+ */
+ /* background: -webkit-linear-gradient(-45deg, #F4EF9B 0%, #ECE2D8 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  /*background: -webkit-linear-gradient(315deg, #F4EF9B 0%, #ECE2D8 100%);
+  /*background: linear-gradient(135deg, #F4EF9B 0%, #ECE2D8 100%);
+  /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F4EF9B ', endColorstr='#ECE2D8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+ background: url(../images/hahaha1ha.jpg);
+}
+
+.main{
+	position: relative;
+	height: 900px;
+	width: 400px;
+	margin-top: -650px;
+	margin-left: 1100px;
+	background: url(../images/true111.gif) no-repeat;
+	padding-top: 150px;
+	padding-left: 13px;
+}
+.login{
+	background-color: rgba(251,249,249,0.7);
+	height:230px;
+	width:300px ;
+	padding-top: 25px;
+	padding-left: 30px;
+	
+	
+}
+#b04{
+	width: 700px;
+	height: 500px;
+	margin-top: 150px;
+	margin-left: 300px;
+}
+
+#cao{
+
+	width: 500px;
+	height: 300px;
+	margin-top: 50px;
+	margin-left: 10px;
+text-align: center;
+	
+}
+@font-face {
+	font-family:'haha';
+	src: url('Metroscript.ttf');
+}

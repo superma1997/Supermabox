@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主页顶端</title>
+<link rel="stylesheet" href="teacupcss/Pagecss/bootstrap.css" />
+<link rel="stylesheet" href="teacupcss/Pagecss/head.css" />
+<script type="text/javascript" src="teacupjs/Pagejs/jquery-3.2.1.js" ></script>
+<script type="text/javascript" src="teacupjs/Pagejs/bootstrap.min.js" ></script>
+<script type="text/javascript">
+$(function(){	
+	//顶部导航切换
+	$(".nav li a").click(function(){
+		$(".nav li a.selected").removeClass("selected")
+		$(this).addClass("selected");
+	})	
+})	
+</script>
+
+
+</head>
+
+<body>
+	<div id="admin_top">
+		<span id="admin_top_span">&nbsp;茶杯办公系统</span>
+			<div id="admin_top_span2">
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#"  class="selected">Home</a>
+				</li>
+				<li>
+					<a href="select.html" target="rightFrame">搜索</a>
+				</li>
+				<li>
+					<a href="game.html"  target="rightFrame">娱乐</a>
+				</li>
+				<li>
+					<a href="dateplan.html"  target="rightFrame">日历</a>
+				</li>
+					<li>
+					<a href="tableprint.html" target="rightFrame">打印</a>
+				</li>
+					<li>
+					<a href="login.jsp"  target="rightFrame">切换账号</a>
+				</li>
+			
+				 
+			</ul>
+			
+    </div>    
+    
+    </div>
+		</div>
+    
+</body>
+</html>
